@@ -3,8 +3,8 @@ import boto3
 from botocore.exceptions import ClientError
 import logging
 
-access_key = 'AKIAZXZXNIV5WG4KNWMY'
-access_secret = '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'
+access_key = ''
+access_secret = ''
 bucket_name = 'yme-flask-2021-webapp'
 
 
