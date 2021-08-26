@@ -1,0 +1,256 @@
+{% extends "base.html" %}
+
+<html>
+
+
+
+{% block content %}
+
+
+<head>
+  	<title>How does it work? </title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  	<!-- Bootstrap CSS -->
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<!-- Bootstrap JS -->
+
+
+
+
+    <section id="Steps">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="section-title">   
+                        <h2 class="text-center" style = "color :rgb(92, 50, 92)">How does it work?</h2>
+                        <p class="text-center" style="color:rgb(118, 87, 126)"  ><i>FOR SMEs, a form containing company information is required to be filled in. Then, information about the items are uploaded into the database thus creating a virtual marketplace for discounted items nearing their shelf life.</i></p>
+                    </div>
+                    <hr class="border-white mb-4 mt-4">
+                </div>
+            </div>
+            
+ 
+        <body>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="work-process">
+                        <i class="fas fa-file-alt"></i>
+                        <h3><a href="#">Sign up</a></h3>
+                        <p>Fill in company information here.</p>
+            
+                        <form method="get" action="/register">
+                            <button type="submit">Sign in as SME</button>
+                        </form>
+                      
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-process">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <h3><a href="#">Fill in your item details</a></h3>
+                        <p>Fill in this form with the information on your products that are nearing expiry date.</p>
+                        <form method="get" action="/create">
+                            <button type="submit">Fill in your item info</button>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-process">
+                        <i class="fas fa-copy"></i>
+                        <h3><a href="#">Application complete!</a></h3>
+                        <p>Our website will take care of the rest by publishing the information on your products to the Merchant's page </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id = 'steps2'>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="section-title">
+                        <h2 class="text-center" style = "color: rgb(92, 50, 92)" >How does it work?</h2>
+                        <p class="text-center"  style = "color: rgb(118, 87, 126)" ><i>As a person in need, a form containing personal information is required to be filled in. Then, information about the items needed are uploaded into the database. The user can then access the virtual market place.</i></p>
+                    </div>
+                    <hr class="border-white mb-4 mt-4">
+                </div>
+            </div>
+            
+ 
+        <body>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="work-process">
+                        <i class="fas fa-file-alt"></i>
+                        <h3><a href="#">Sign up</a></h3>
+                        <p>Fill in personal information here.</p>
+                        <form method="get" action="/register">
+                            <button type="submit">Sign in as individual</button>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-process">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <h3><a href="#">Fill in your needs here</a></h3>
+                        <p>Fill in this form with the information on items you need here.</p>
+                        <form method="get" action="/register">
+                            <button type="submit">Fill in your needs</button>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-process">
+                        <i class="fas fa-copy"></i>
+                        <h3><a href="#">Your application is complete!</a></h3>
+                        <p> You can start browsing the virtual marketplace. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+<style>
+
+
+/*-- Steps Section CSS --*/
+#Steps {
+    padding: 100px 30px 80px;
+    background-color: #FBEEC1;
+    color: #fff;
+}
+#Steps .work-process::after {
+    content: "";
+    position: absolute;
+    background: #f1f3f5;
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+#Steps .work-process {
+    background-color: #fff;
+    padding: 40px 15px;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+    box-shadow: 0px 30px 0px -20px #ffffff;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #1b833a;
+    text-align: center;
+}
+#Steps .work-process i {
+    margin: 0 auto;
+    display: table;
+    background-color: #290f66;
+    width: 70px;
+    height: 70px;
+    border-radius: 17px;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    line-height: 70px;
+}
+#Steps .work-process h3 {
+    margin: 15px 0px;
+}
+#Steps .work-process h3 a {
+    font-size: 20px;
+    color: #607d8b;
+}
+#Steps .work-process p {
+    color: #8d9ea7;
+}
+
+
+
+
+
+
+
+
+#steps2 {
+    padding: 100px 30px 80px;
+    background-color: #FBEEC1;
+    color: #fff;
+}
+#steps2 .work-process::after {
+    content: "";
+    position: absolute;
+    background: #f1f3f5;
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+#steps2 .work-process {
+    background-color: #fff;
+    padding: 40px 15px;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+    box-shadow: 0px 30px 0px -20px #ffffff;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #1b833a;
+    text-align: center;
+}
+#steps2 .work-process i {
+    margin: 0 auto;
+    display: table;
+    background-color: #290f66;
+    width: 70px;
+    height: 70px;
+    border-radius: 17px;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    line-height: 70px;
+}
+#steps2 .work-process h3 {
+    margin: 15px 0px;
+}
+#steps2 .work-process h3 a {
+    font-size: 20px;
+    color: #607d8b;
+}
+#steps2 .work-process p {
+    color: #8d9ea7;
+}
+
+
+.container2
+{
+    float:right;
+}
+</style>
+    {% endblock %}
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+</html>

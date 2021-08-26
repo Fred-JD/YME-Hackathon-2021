@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<head>
+    <h1 style="Margin: 10px;">Our Stories</h1>
+    <style>
+      img{
+        height :50px;
+        width: 100px;
+      }
+      </style>
+    </head>
+    
+    <body>
+    <blockquote class="blockquote text-center">
+      <p class="mb-0">"Selfless giving is the art of living."</p>
+      <footer class="blockquote-footer">Frederic Lenz </footer>
+    </blockquote>
+    
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Event #1
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="media">
+      <img src="https://cdn.discordapp.com/attachments/786083551325585408/880100765736243230/unknown.png" class="align-self-center mr-3" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0">Topic</h5>
+        <p>25 Auguest 2021</p>
+        <p class="mb-0">What had happened....</p>
+      </div>
+    </div>
+          </div>
+        </div>
+      </div>
+    
+    
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Event #2
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="media">
+      <img src="https://cdn.discordapp.com/attachments/786083551325585408/880100941309837343/unknown.png" class="align-self-center mr-3" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0">Topic</h5>
+        <p>26 Auguest 2021</p>
+        <p class="mb-0">What had happened....</p>
+      </div>
+    </div>
+          </div>
+        </div>
+      </div>
+    
+    
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Event #3
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+     <div class="media">
+      <img src="https://cdn.discordapp.com/attachments/786083551325585408/880102566690713661/unknown.png" class="align-self-center mr-3" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0">Topic</h5>
+        <p>27 Auguest 2021</p>
+        <p class="mb-0">What had happened....</p>
+      </div>
+    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    </body>
+{% endblock %}
